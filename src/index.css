@@ -1,13 +1,38 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+ body {
+    background-image: url('./assets/background1.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+    backdrop-filter: blur(0px);
+} 
+
+
+
+
+  .faq-background {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+  }
+  
+  .faq-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 2s;
+    background-color: #ffffff;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  
+  .faq-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive design for mobile devices */
+  @media (max-width: 767px) {
+    .ui.grid .six.wide.column {
+      width: 100% !important;
+    }
+  }
