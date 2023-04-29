@@ -8,9 +8,12 @@
     background-position: center; 
     background-attachment: fixed;
     backdrop-filter: blur(0px);
+
 } 
 
-
+::-webkit-scrollbar{
+  display: none;
+}
 
 
   .faq-background {
@@ -35,4 +38,12 @@
     .ui.grid .six.wide.column {
       width: 100% !important;
     }
+  }
+
+
+
+  a:hover {
+    transition: background-color 0.4s ease-in-out;
+    background-color: #fff;
+    color: #333;
   }

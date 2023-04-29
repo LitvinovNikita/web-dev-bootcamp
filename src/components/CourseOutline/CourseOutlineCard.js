@@ -14,3 +14,4 @@ const CourseOutlineCard = ({ week, title, topics }) => (
 );
 
 export default CourseOutlineCard;
+

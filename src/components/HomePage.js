@@ -52,7 +52,7 @@ const HomePage = () => {
 
 
 
-      <section id="instructor-information">
+      <section id="instructor-information" className='mb-8'>
         {/* Instructor Information content */}
         <InstructorInformation/>
       </section>
