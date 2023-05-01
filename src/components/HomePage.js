@@ -65,9 +65,9 @@ const HomePage = () => {
             </Link>
           </nav> */}
 
-          <nav className="hidden md:flex lg:text-2xl font-semibold text-white py-4 md:py-6 justify-center items-center space-x-2 lg:space-x-4">
+          <nav className="hidden md:flex lg:text-2xl font-semibold text-white py-4 md:py-6 justify-center items-center space-x-2  lg:space-x-4">
             <Link
-              className="nav-link whitespace-nowrap px-2 sm:px-4 md:px-6 lg:px-10"
+              className="nav-link whitespace-nowrap md:text-sm  px-1 sm:px-4 md:px-1 lg:px-10 lg:text-2xl"
               to="introduction"
               smooth={true}
               duration={500}
@@ -76,7 +76,7 @@ const HomePage = () => {
               Введение
             </Link>
             <Link
-              className="nav-link whitespace-nowrap "
+              className="nav-link whitespace-nowrap md:text-sm   px-1 sm:px-4 md:px-1 lg:px-10 lg:text-2xl"
               to="course-outline"
               smooth={true}
               duration={500}
@@ -85,7 +85,7 @@ const HomePage = () => {
               Программа курса
             </Link>
             <Link
-              className="nav-link whitespace-nowrap"
+              className="nav-link whitespace-nowrap  md:text-sm  px-1 sm:px-4 md:px-1 lg:px-8 lg:text-2xl"
               to="instructor-information"
               smooth={true}
               duration={500}
@@ -94,7 +94,7 @@ const HomePage = () => {
               Информация об инструкторе
             </Link>
             <Link
-              className="nav-link whitespace-nowrap"
+              className="nav-link whitespace-nowrap md:text-sm px-1 sm:px-4 md:px-1 lg:px-8 lg:text-2xl"
               to="faqs"
               smooth={true}
               duration={500}
@@ -103,7 +103,7 @@ const HomePage = () => {
               Часто задаваемые вопросы
             </Link>
             <Link
-              className="nav-link whitespace-nowrap"
+              className="nav-link whitespace-nowrap md:text-sm  px-3 sm:px-4 md:px-1 lg:px-4 lg:text-2xl"
               to="registration"
               smooth={true}
               duration={500}
@@ -122,7 +122,7 @@ const HomePage = () => {
 
         </div>
         {/* Mobile header */}
-        <div className="md:hidden md:hidden bg-white bg-opacity-50 backdrop-blur-md w-full">
+        <div className="md:hidden bg-white bg-opacity-50 backdrop-blur-md w-full">
             <Link
               to="top"
               smooth={true}
