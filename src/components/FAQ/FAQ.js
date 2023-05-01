@@ -19,7 +19,7 @@ const FAQ = () => {
   
         return (
           <div
-            className={`border border-gray-300 rounded-lg shadow-md p-4 mb-4 bg-white transition-all duration-300 ${
+            className={` faq-card border border-gray-300 rounded-lg shadow-md p-4 mb-4 bg-white transition-all duration-300 ${
               active ? 'max-h-full' : 'max-h-12 overflow-hidden'
             }`}
             key={faq.id}
@@ -30,6 +30,8 @@ const FAQ = () => {
               <div className="mt-2">{faq.answer}</div>
             </div>
           </div>
+
+          
         );
       });
     };

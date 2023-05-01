@@ -7,7 +7,7 @@ const RegistrationButton = () => {
         href="https://forms.gle/TuvXLeJSTZP3J7fk8"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-block text-sm px-4 py-3 leading-none border rounded text-white font-bold  border-white hover:border-transparent
+        className=" inline-block text-lg px-4 py-3 leading-none border-4 rounded-lg text-white font-bold  border-white hover:border-transparent
          hover:text-teal-500 hover:bg-white w-full mb-8"
       >
         Зарегистриоваться!
