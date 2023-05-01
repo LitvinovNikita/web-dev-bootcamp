@@ -19,15 +19,21 @@ const FAQ = () => {
   
         return (
           <div
-            className={` faq-card border border-gray-300 rounded-lg shadow-md p-4 mb-4 bg-white transition-all duration-300 ${
-              active ? 'max-h-full' : 'max-h-12 overflow-hidden'
+            className={`faq-card border border-gray-300 rounded-lg shadow-md p-4 mb-4 bg-white transition-all duration-300 ${
+              active ? '' : 'overflow-hidden'
             }`}
             key={faq.id}
             onClick={() => onTitleClick(uniqueIndex)}
           >
             <div className="flex flex-col items-start justify-center h-full">
               <div className="font-semibold">{faq.question}</div>
-              <div className="mt-2">{faq.answer}</div>
+              <div
+                className={`mt-2 transition-all duration-300 ${
+                  active ? 'max-h-[500px] overflow-hidden' : 'max-h-0 overflow-hidden'
+                }`}
+              >
+                {faq.answer}
+              </div>
             </div>
           </div>
 
